@@ -200,11 +200,10 @@ export default function SettingsPage() {
                 <motion.div
                     initial={{ opacity: 0, y: -5 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className={`flex items-center gap-2 rounded-xl border px-4 py-3 text-xs ${
-                        error
+                    className={`flex items-center gap-2 rounded-xl border px-4 py-3 text-xs ${error
                             ? "border-red-400/10 bg-red-400/[0.04] text-red-300"
                             : "border-[#00A67E]/10 bg-[#00A67E]/[0.04] text-[#00A67E]"
-                    }`}
+                        }`}
                 >
                     {saving ? (
                         <>
@@ -601,15 +600,9 @@ export default function SettingsPage() {
                                         </p>
 
                                         <p className="mt-1 text-xs text-white/55">
-                                            {new Date(
-                                                user.createdAt
-                                            ).toLocaleDateString(
-                                                "en-IN",
-                                                {
-                                                    month: "short",
-                                                    year: "numeric",
-                                                }
-                                            )}
+                                            {user.createdAt
+                                                ? new Date(user.createdAt).toLocaleDateString("en-IN")
+                                                : "Not available"}
                                         </p>
 
                                     </div>
@@ -853,10 +846,9 @@ function SettingToggle({
                     transition
                     disabled:cursor-not-allowed
                     disabled:opacity-50
-                    ${
-                        enabled
-                            ? "bg-[#00A67E]"
-                            : "bg-white/[0.12]"
+                    ${enabled
+                        ? "bg-[#00A67E]"
+                        : "bg-white/[0.12]"
                     }
                 `}
             >
