@@ -49,8 +49,8 @@ Ensure you have Node.js (v18+) and npm/pnpm/yarn installed.
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/BLACKEYE-ASTRO/billfusion.git
+cd billfusion
 
 # Install dependencies
 npm install
@@ -105,8 +105,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
     └── migrations/     # SQL migrations
 ```
 
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
