@@ -6,7 +6,7 @@ A modern, full-stack personal finance and expense tracking web application built
 
 ## 📸 Screenshots
 
-[BillFusion Screenshot](./public/assets/web.png)
+![BillFusion Screenshot](./public/assets/web.png)
 
 | Dashboard Overview | Analytics & Reports |
 |:------------------:|:------------------:|
